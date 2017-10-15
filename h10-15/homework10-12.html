@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.button{
+	width: 60px;
+	height: 60px;
+    }
+    #button1{
+	width: 50px;
+	height: 50px;
+    }
+    #result{
+   	text-align: right;`											
+    }
+	</style>
+	<script type="text/javascript" src="js/calculate.js"></script>
+</head>
+<body>
+    <table align="center" border="1px" align="center"cellspacing="3" cellpadding="10" >
+    	<tr>
+    		<td colspan="3" id="result"></td>
+    		<td><input type="button" value="c" id="c" class="button" onclick="clearData()"></td>
+    	</tr>
+        <tr>
+        	<td><input type="button" value="1" id="1" class="button" onclick="showData(1)"></td>
+        	<td><input type="button" value="2" id="2" class="button" onclick="showData(2)"></td>
+        	<td><input type="button" value="3" id="3" class="button" onclick="showData(3)"></td>
+        	<td><input type="button" value="+" id="+" class="button" onclick="showData('+')"></td>
+        </tr>
+        <tr>
+        	<td><input type="button" value="4" id="4" class="button" onclick="showData(4)"></td>
+        	<td><input type="button" value="5" id="5" class="button" onclick="showData(5)"></td>
+        	<td><input type="button" value="6" id="6" class="button" onclick="showData(6)"></td>
+        	<td><input type="button" value="-" id="-" class="button" onclick="showData('-')"></td>
+        </tr>
+        <tr>
+        	<td><input type="button" value="7" id="7" class="button" onclick="showData(7)"></td>
+        	<td><input type="button" value="8" id="8" class="button" onclick="showData(8)"></td>
+        	<td><input type="button" value="9" id="9" class="button" onclick="showData(9)"></td>
+        	<td><input type="button" value="*" id="*" class="button" onclick="showData('*')"></td>
+        </tr>
+        <tr>
+        	<td><input type="button" value="0" id="0" class="button" onclick="showData(0)"></td>
+        	<td><input type="button" value="." id="." class="button" onclick="showData('.')"></td>
+        	<td><input type="button" value="=" id="=" class="button" onclick="caculate( )"></td>
+        	<td><input type="button" value="/" id="/" class="button" onclick="showData('/')"></td>
+        </tr>
+    </table>
+</body>
+</html>
