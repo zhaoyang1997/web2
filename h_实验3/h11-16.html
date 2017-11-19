@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>实验3</title>
+	<meta charset="utf-8">
+	
+	<style type="text/css">
+    #title{
+    	width: 700px;
+    	height: 30px;
+    	background-image: url("images/bg.jpg");
+    }
+    #button{
+    	width: 100px;
+    	background-color: #fff; 
+    	border-width: 1px;
+    	margin-left: 590px;
+    }
+	</style>
+</head>
+<body>
+    <div id="title"><span id="title">宝贝描述相符（打分匿名）</span></div><br/>
+    <div>
+       <img src="images/star0.png" onmouseover="starPic(1);" onmouseout="hid(1)" onclick="qd(1)">
+       <img src="images/star0.png" onmouseover="starPic(2);" onmouseout="hid(2)" onclick="qd(2)" >
+       <img src="images/star0.png" onmouseover="starPic(3);" onmouseout="hid(3)" onclick="qd(3)" >
+       <img src="images/star0.png" onmouseover="starPic(4);" onmouseout="hid(4)" onclick="qd(4)" >
+       <img src="images/star0.png" onmouseover="starPic(5);" onmouseout="hid(5)" onclick="qd(5)" >
+       <form>
+       <br/>
+       	<textarea rows="15" cols="105" id="text"> </textarea><br/>
+       	<button id="button">公开评论<img src="images/sanjiao.png"></button>
+       </form>
+
+    </div>
+</body>
+<script type="text/javascript" src="caculate.js">
+</script>
+</html>
