@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		*{
+			font-size: 36px;
+		}
+		tr{
+			height: 30px;
+		}
+		.border{
+            border: 1px solid yellow;
+		}
+	</style>
+
+</head>
+<body>
+	<table width="1000px" border="1" onmouseover="show1()">
+		<tr height="30px">
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+	<input type="button" name="" id="add" value="添加一行" style="margin-left:840px;" />
+	<input type="button" name="" id="delete" value="删除一行" style="margin-left:840px;"onclick="delete()"/>
+		<script >
+		var add=document.getElementById('add');
+		var del=document.getElementById('delete');
+		add.onclick=function(){
+            var tr=document.createElement('tr');
+            tr.height=30;
+            var t=document.getElementsByTagName('table');
+            var add2=t[0];
+            add2.appendChild(tr);
+            for(var i=0;i<12;i++)
+            {
+            	var td=document.createElement('td');
+                tr.appendChild(td);
+            }
+        }
+        del.onclick=function(){
+        	var tr1=document.getElementsByTagName('table');
+        	tr1[0].removeChild(tr1[0].lastChild);
+        }
+        function show1(){
+        	var tr2=document.getElementsByTagName('tr');
+        	for(var i=0;i<tr2.length;i++){
+        		tr2[i].onmouseover=function(){
+        			this.className="border";
+        		}
+        		tr2[i].onmouseout=function(){
+        			this.className="";
+        		}
+        	}
+        }
+	</script>
+</body>
+</html>
